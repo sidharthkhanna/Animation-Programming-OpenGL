@@ -1,0 +1,21 @@
+                        Instructions 
+
+ 1. drawCircle() - It creates a circle inside the screen .
+
+ 2. drawCircle1()- It creates a circle inside the index card .
+
+ 3. drawSquare() - It creates a sqaure inside the index card .
+
+ 4. 4 variables squarevisible , circlevisible ,Testvisible , image1visible with type BOOL have been used .
+
+ 5. imageWidth=500 , imageHeight=375 . So i have used 500 and 375 in some code instead of imageWidth and imageHeight .
+
+ 6. getImageColor(parameters) - Created an index z containing the RGB pixels for x ,y coordinates of mouse click. image[z] for R value ,image[z+1] for green and image[z+2] for blue.
+  
+ 7. glutAddSubMenu(name , submenu)- Creates a menu with any name and having  subentries . You can add subentries inside the menu  using glutAddMenuEntry .
+
+ 8. flipImag(parameters)- Created a loop with rows from 0 to 375 and another loop with columns from 0 to 500 .Then storing the flipped pixels of RGB for image inside the flippedImage .
+                     
+ 9. malloc()- used malloc to assign memory to flippedImage().
+
+ 10.%u is used for unsigned char .
