@@ -1,0 +1,7 @@
+                        Instructions 
+1. timediff(t1,t2)- It is used to determine the time difference.
+2. figure()- It is used to create a stickman.
+3. figure1()- It is used in default mode for rotating arms and legs.
+4. figure2()- It is used in walking mode.
+5. animation()- It is used to animate the stickman.
+
