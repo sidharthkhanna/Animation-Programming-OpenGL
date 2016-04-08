@@ -1,0 +1,28 @@
+Scene1()- on pressing Cascii '1' , it displays two snowman , snowman1 and snowman2.
+
+Scene2()- on pressing Cascii '2' it replaces snowman1 with marble snowman.
+
+Scene3()- on pressing Cascii '3' it replaces snowman1 with bump hat snowman.
+
+figure1()- creates snowman1
+
+figure()- creates snowman2
+
+traverse()- it is used to render snowman . 
+
+noisefunction1()- It is used to create perlin noise texture.
+
+fragmentshader- It is used to wrap image on head of snowman2.
+
+fragmentshader1- It is used to enable light on snowman1.
+
+fragmentshader2- It is used to create horizontal lines on body and cone of snowman2.
+
+fragmentshader3- It is used to create checkerboard on plane.
+
+fragmentshader5- It is used to load perlin noise texture marble on snowman1
+
+fragmentshader6- It is used to create bump map on snowman1 hat.
+
+
+

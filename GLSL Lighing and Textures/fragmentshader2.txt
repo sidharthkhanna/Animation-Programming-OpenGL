@@ -1,0 +1,26 @@
+varying vec3 N;
+varying vec3 v;    
+
+uniform sampler2D color_texture;
+
+uniform vec4 color1 = vec4(1.0, 0.0, 0.0, 1.0);
+uniform vec4 color2 = vec4(1.0, 1.0, 1.0, 1.0);
+ 
+ out vec4 colorOut  ;
+
+
+void main (void)  
+{  
+
+      
+
+if(float(mod(20*gl_TexCoord[0].t,2))<1)
+
+colorOut=color1;
+else
+colorOut=color2;
+
+     
+   
+
+}    

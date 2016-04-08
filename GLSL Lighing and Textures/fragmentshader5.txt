@@ -1,0 +1,20 @@
+varying vec3 N;
+varying vec3 v;    
+
+uniform sampler2D color_texture;
+
+uniform vec4 color1 = vec4(0.0, 0.0, 1.0, 1.0);
+uniform vec4 color2 = vec4(0.3, 0.7, 0.5, 1.0);
+ 
+out vec4 colorOut;
+
+void main (void)  
+{  
+
+   
+   colorOut=texture2D(color_texture, gl_TexCoord[0].st);  
+
+     
+
+
+}    

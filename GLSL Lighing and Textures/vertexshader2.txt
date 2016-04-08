@@ -1,0 +1,40 @@
+attribute vec3 tangent;
+varying vec3 v;
+varying vec3 lightvec;
+varying vec3 eyevec;
+ 
+in vec4 position;
+ 
+void main(void)
+{
+
+   //Transform the vertex position
+   v = vec3(gl_ModelViewMatrix * gl_Vertex);   
+   
+ 
+   //Transform the normal vector
+
+  vec3 n = normalize (gl_NormalMatrix * gl_Normal);
+
+
+ vec3 t = normalize (gl_NormalMatrix * tangent);
+ vec3 b = cross (n, t);
+ vec3 lightDir = normalize(gl_LightSource[0].position.xyz - v);
+ vec3 v1;
+ v1.x = dot (lightDir, t);
+ v1.y = dot (lightDir, b);
+ v1.z = dot (lightDir, n);
+ lightvec = normalize(v1);
+ v1.x = dot (v, t);
+ v1.y = dot (v, b);
+ v1.z = dot (v, n);
+eyevec=normalize(v1);
+
+   //Get the texture coordinate
+   gl_TexCoord[0] = gl_MultiTexCoord0;
+
+   //Set the position with respect to the screen
+   gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+
+
+}
