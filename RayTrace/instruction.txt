@@ -1,0 +1,20 @@
+
+
+In raytracing camera movement and key function is slow .. so press key and wait for sometime
+
+1.i have created stripes at the front of wall i.e behin eye to show shadow at side walls and reflection as well
+
+2.Scene 1 is default for light1 at top of snowman
+
+3.Scene 2 has 2 lights at front corners of cube i.e behind eye
+
+4. press 1 for scene 1 and press 2 for scene 2.
+
+5. trace()- it is used for raytracing and is recursivly called for reflection
+
+6. there is checkerboard pattern at the fllor of wall.
+
+7. Navigationkeys()- it is used for camera movement left right up down.
+
+8. keys()- used for scene 1 and scene 2 .
+
